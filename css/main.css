@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.header {
+  background-color: black;
+}
+.header .inner {
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 550px) {
+  .header .inner {
+    justify-content: center;
+  }
+}
+.header .inner .list-container {
+  display: flex;
+}
+.header .inner .list-container p {
+  padding: 20px;
+}
+.header .inner .list-container p:first-child {
+  background-color: green;
+}
+@media screen and (max-width: 550px) {
+  .header .inner .list-container {
+    display: none;
+  }
+}
+.header .inner .menu {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+@media screen and (max-width: 550px) {
+  .header .inner .menu {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

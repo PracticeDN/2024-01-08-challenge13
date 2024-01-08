@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.header {
+  background-color: black;
+
+  .inner {
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 550px) {
+      justify-content: center;
+    }
+
+    .list-container {
+      display: flex;
+      p {
+        padding: 20px;
+
+        &:first-child {
+          background-color: green;
+        }
+      }
+
+      @media screen and (max-width: 550px) {
+        display: none;
+      }
+    }
+
+    .menu {
+      width: 20px;
+      height: 20px;
+      display: none;
+
+      @media screen and (max-width: 550px) {
+        display: block;
+      }
+    }
+  }
+}
